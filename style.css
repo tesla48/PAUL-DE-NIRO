@@ -1,0 +1,131 @@
+/* Stili di base */
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #4a90e2, #9013fe); /* Sottofondo con gradiente professionale */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Altezza della vista per centrare verticalmente */
+    text-align: center; /* Centratura del testo */
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Occupare tutta la larghezza disponibile */
+}
+
+.nav {
+    margin-top: 10px;
+}
+
+.nav .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #555;
+    border: none;
+    border-radius: 25px; /* Bottoni rotondi */
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 0 10px;
+}
+
+.nav .btn:hover {
+    background-color: #777;
+    transform: translateY(-2px);
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.intro, .portfolio {
+    width: 80%;
+    max-width: 1000px;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-img {
+    width: 600px; /* Imposta la larghezza */
+    height: 600px; /* Imposta l'altezza */
+    border-radius: 50%;
+    opacity: 0.4; /* Riduzione dell'opacità */
+    margin: 20px 0;
+    border: 3px solid #333; /* Bordo scuro */
+}
+
+.intro-text {
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.project {
+    background-color: #f0f0f0;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    flex-basis: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+}
+
+/* Media Queries per la reattività */
+@media (max-width: 768px) {
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        flex-basis: 80%;
+    }
+}
